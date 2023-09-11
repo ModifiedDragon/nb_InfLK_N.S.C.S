@@ -127,13 +127,11 @@ public class Reihungen extends javax.swing.JApplet {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     int[] highscore = new int[6];
     highscore[0] = (int) Math.random()*49+1;
-    String 1 = parseString(highscore[0]);
     highscore[1] = (int) Math.random()*49+1;
     highscore[2] = (int) Math.random()*49+1;
     highscore[3] = (int) Math.random()*49+1;
     highscore[4] = (int) Math.random()*49+1;
     highscore[5] = (int) Math.random()*49+1;
-    h1.setText(highscore[0]);
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
