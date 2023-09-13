@@ -100,11 +100,6 @@ public class GUI extends javax.swing.JFrame {
 
         menu.setText("Menu");
         menu.setActionCommand("menu");
-        menu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuActionPerformed(evt);
-            }
-        });
 
         delete.setText("Exit");
         delete.addActionListener(new java.awt.event.ActionListener() {
@@ -185,10 +180,6 @@ public class GUI extends javax.swing.JFrame {
     TicTacToe ttt = new TicTacToe();
     ttt.setVisible(true);
     }//GEN-LAST:event_tictactoeActionPerformed
-
-    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
-    
-    }//GEN-LAST:event_menuActionPerformed
 
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
     dispose();
