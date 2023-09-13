@@ -186,7 +186,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteActionPerformed
 
     private void tracetabellenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tracetabellenActionPerformed
-    Reihungen trace = new Reihungen();
+    Array trace = new Array();
     trace.setVisible(true);
     }//GEN-LAST:event_tracetabellenActionPerformed
 
