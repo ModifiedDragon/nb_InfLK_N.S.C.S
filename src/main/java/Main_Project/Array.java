@@ -29,6 +29,7 @@ public class Array extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
         start = new javax.swing.JButton();
         h1 = new javax.swing.JLabel();
         h4 = new javax.swing.JLabel();
@@ -39,6 +40,20 @@ public class Array extends javax.swing.JFrame {
         number = new javax.swing.JTextField();
         add = new javax.swing.JButton();
         position = new javax.swing.JTextField();
+        ht = new javax.swing.JTextField();
+        hb = new javax.swing.JButton();
+        t1 = new javax.swing.JLabel();
+        t2 = new javax.swing.JLabel();
+        t3 = new javax.swing.JLabel();
+        t4 = new javax.swing.JLabel();
+        t5 = new javax.swing.JLabel();
+        t6 = new javax.swing.JLabel();
+        t7 = new javax.swing.JLabel();
+        t8 = new javax.swing.JLabel();
+        t9 = new javax.swing.JLabel();
+        t10 = new javax.swing.JLabel();
+
+        jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -66,7 +81,6 @@ public class Array extends javax.swing.JFrame {
 
         h3.setText("3");
 
-        number.setText("           ");
         number.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 numberKeyTyped(evt);
@@ -80,12 +94,45 @@ public class Array extends javax.swing.JFrame {
             }
         });
 
-        position.setText("           ");
         position.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 positionKeyTyped(evt);
             }
         });
+
+        ht.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                htKeyTyped(evt);
+            }
+        });
+
+        hb.setText("         ");
+        hb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hbActionPerformed(evt);
+            }
+        });
+
+        t1.setText("              ");
+
+        t2.setText("              ");
+
+        t3.setText("              ");
+
+        t4.setText("              ");
+        t4.setToolTipText("");
+
+        t5.setText("              ");
+
+        t6.setText("              ");
+
+        t7.setText("              ");
+
+        t8.setText("              ");
+
+        t9.setText("              ");
+
+        t10.setText("              ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,48 +140,94 @@ public class Array extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(h1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(start, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(h6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(h5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(h4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(h3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(h2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(h1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(start, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(h6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(h5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(h4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(h3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(h2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(159, 159, 159)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(102, 102, 102)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(t2)
+                            .addComponent(t3)
+                            .addComponent(t4)
+                            .addComponent(t5)
+                            .addComponent(t6)
+                            .addComponent(t7)
+                            .addComponent(t8)
+                            .addComponent(t9)
+                            .addComponent(t10)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(t1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                                    .addComponent(ht, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(hb, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(number, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(position, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(107, 107, 107))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(h1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(h2)
-                    .addComponent(add))
-                .addGap(18, 18, 18)
+                .addContainerGap()
+                .addComponent(add)
+                .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(h3)
                     .addComponent(number, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(position, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(h4)
-                .addGap(18, 18, 18)
-                .addComponent(h5)
-                .addGap(18, 18, 18)
-                .addComponent(h6)
-                .addGap(18, 18, 18)
-                .addComponent(start)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(h1)
+                .addGap(26, 26, 26)
+                .addComponent(h2)
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(h3)
+                        .addGap(24, 24, 24)
+                        .addComponent(h4)
+                        .addGap(18, 18, 18)
+                        .addComponent(h5)
+                        .addGap(18, 18, 18)
+                        .addComponent(h6)
+                        .addGap(18, 18, 18)
+                        .addComponent(start))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(hb)
+                            .addComponent(ht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(t10)))
                 .addGap(76, 76, 76))
         );
 
@@ -161,17 +254,38 @@ public class Array extends javax.swing.JFrame {
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
         int i = 0;
+        int z = Integer.parseInt(position.getText());
+        z = z - 1;
         while (i != 50) {
-            list2[i] = list[i];
-            i = i + 1;
+            if (i != z) {
+                list2[i] = list[i];
+                i = i + 1;
+            } else {
+                i = i + 1;
+            }
         }
         int n = Integer.parseInt(number.getText());
-        list2[51] = n;
-        System.out.println(list2);
+        list2[z] = n;
+        System.out.println(list2[z]);
     }//GEN-LAST:event_addActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-
+        int i = 0;
+        while (i != 50) {
+                list[i] = (int) (Math.random() * 101);
+                i = i + 1;
+        }
+        t1.setText("100");
+        t2.setText("100");
+        t3.setText("100");
+        t4.setText("100");
+        t5.setText("100");
+        t6.setText("100");
+        t7.setText("100");
+        t8.setText("100");
+        t9.setText("100");
+        t10.setText("100");
+        
     }//GEN-LAST:event_formWindowOpened
 
     private void numberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numberKeyTyped
@@ -189,6 +303,142 @@ public class Array extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_positionKeyTyped
+
+    private void hbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hbActionPerformed
+        int temp;
+        int n = Integer.parseInt(ht.getText());
+        int nt1 = Integer.parseInt(t1.getText());
+        int nt2 = Integer.parseInt(t2.getText());
+        int nt3 = Integer.parseInt(t3.getText());
+        int nt4 = Integer.parseInt(t4.getText());
+        int nt5 = Integer.parseInt(t5.getText());
+        int nt6 = Integer.parseInt(t6.getText());
+        int nt7 = Integer.parseInt(t7.getText());
+        int nt8 = Integer.parseInt(t8.getText());
+        int nt9 = Integer.parseInt(t9.getText());
+        int nt10 = Integer.parseInt(t10.getText());
+        if (nt1 <= n){
+            t1.setText("" + n);
+            temp = nt1;
+            t2.setText("" + temp);
+            temp = nt2;
+            t3.setText("" + temp);
+            temp = nt3;
+            t4.setText("" + temp);
+            temp = nt4;
+            t5.setText("" + temp);
+            temp = nt5;
+            t6.setText("" + temp);
+            temp = nt6;
+            t7.setText("" + temp);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt2 <= n){
+            t2.setText("" + n);
+            temp = nt2;
+            t3.setText("" + temp);
+            temp = nt3;
+            t4.setText("" + temp);
+            temp = nt4;
+            t5.setText("" + temp);
+            temp = nt5;
+            t6.setText("" + temp);
+            temp = nt6;
+            t7.setText("" + temp);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt3 <= n){
+            t3.setText("" + n);
+            temp = nt3;
+            t4.setText("" + temp);
+            temp = nt4;
+            t5.setText("" + temp);
+            temp = nt5;
+            t6.setText("" + temp);
+            temp = nt6;
+            t7.setText("" + temp);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt4 <= n){
+            t4.setText("" + n);
+            temp = nt4;
+            t5.setText("" + temp);
+            temp = nt5;
+            t6.setText("" + temp);
+            temp = nt6;
+            t7.setText("" + temp);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt5 <= n){
+            t5.setText("" + n);
+            temp = nt5;
+            t6.setText("" + temp);
+            temp = nt6;
+            t7.setText("" + temp);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt6 <= n){
+            t6.setText("" + n);
+            temp = nt6;
+            t7.setText("" + temp);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt7 <= n){
+            t7.setText("" + n);
+            temp = nt7;
+            t8.setText("" + temp);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt8 <= n){
+            t8.setText("" + n);
+            temp = nt8;
+            t9.setText("" + temp);
+            temp = nt9;
+            t10.setText("" + temp);
+        }else if (nt9 <= n){
+            temp = nt9;
+            t9.setText("" + n);
+            temp = nt10;
+            t10.setText("" + temp);
+        }else if (nt10 <= n){
+            t10.setText("" + n);
+            
+        }
+    }//GEN-LAST:event_hbActionPerformed
+
+    private void htKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_htKeyTyped
+        char key = evt.getKeyChar();
+        if (Character.isDigit(key)) {
+        } else {
+            evt.consume();
+        }
+    }//GEN-LAST:event_htKeyTyped
 
     /**
      * @param args the command line arguments
@@ -233,8 +483,21 @@ public class Array extends javax.swing.JFrame {
     private javax.swing.JLabel h4;
     private javax.swing.JLabel h5;
     private javax.swing.JLabel h6;
+    private javax.swing.JButton hb;
+    private javax.swing.JTextField ht;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField number;
     private javax.swing.JTextField position;
     private javax.swing.JButton start;
+    private javax.swing.JLabel t1;
+    private javax.swing.JLabel t10;
+    private javax.swing.JLabel t2;
+    private javax.swing.JLabel t3;
+    private javax.swing.JLabel t4;
+    private javax.swing.JLabel t5;
+    private javax.swing.JLabel t6;
+    private javax.swing.JLabel t7;
+    private javax.swing.JLabel t8;
+    private javax.swing.JLabel t9;
     // End of variables declaration//GEN-END:variables
 }

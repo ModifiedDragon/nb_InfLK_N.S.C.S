@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JTextField" name="jTextField1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jTextField1"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -28,57 +35,111 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="h1" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="start" max="32767" attributes="0"/>
-                          <Component id="h6" max="32767" attributes="0"/>
-                          <Component id="h5" alignment="0" max="32767" attributes="0"/>
-                          <Component id="h4" alignment="0" max="32767" attributes="0"/>
-                          <Component id="h3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="h2" alignment="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="number" min="-2" pref="68" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Component id="position" min="-2" pref="68" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="add" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="h1" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="start" max="32767" attributes="0"/>
+                      <Component id="h6" max="32767" attributes="0"/>
+                      <Component id="h5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="h4" alignment="0" max="32767" attributes="0"/>
+                      <Component id="h3" alignment="0" max="32767" attributes="0"/>
+                      <Component id="h2" alignment="1" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="t2" min="-2" max="-2" attributes="0"/>
+                          <Component id="t3" min="-2" max="-2" attributes="0"/>
+                          <Component id="t4" min="-2" max="-2" attributes="0"/>
+                          <Component id="t5" min="-2" max="-2" attributes="0"/>
+                          <Component id="t6" min="-2" max="-2" attributes="0"/>
+                          <Component id="t7" min="-2" max="-2" attributes="0"/>
+                          <Component id="t8" min="-2" max="-2" attributes="0"/>
+                          <Component id="t9" min="-2" max="-2" attributes="0"/>
+                          <Component id="t10" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="t1" alignment="0" pref="70" max="32767" attributes="0"/>
+                                  <Component id="ht" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="hb" min="-2" pref="67" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="62" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="number" min="-2" pref="68" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="position" min="-2" pref="68" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="add" min="-2" pref="142" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-              <Component id="h1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="h2" min="-2" max="-2" attributes="0"/>
-                  <Component id="add" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="add" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="h3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="number" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="position" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="h4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="h5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="h6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="start" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="h1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="h2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="h3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="h4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="h5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="h6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="start" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="hb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ht" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="t10" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -124,9 +185,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="number">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="           "/>
-      </Properties>
       <Events>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="numberKeyTyped"/>
       </Events>
@@ -140,12 +198,73 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="position">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="           "/>
-      </Properties>
       <Events>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="positionKeyTyped"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ht">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="htKeyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="hb">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="         "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hbActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="              "/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
