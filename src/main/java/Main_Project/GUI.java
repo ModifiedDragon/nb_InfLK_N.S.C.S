@@ -37,6 +37,7 @@ public class GUI extends javax.swing.JFrame {
         potenz = new javax.swing.JButton();
         tictactoe = new javax.swing.JButton();
         tracetabellen = new javax.swing.JButton();
+        tracetabellen1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu = new javax.swing.JMenu();
         delete = new javax.swing.JRadioButtonMenuItem();
@@ -70,14 +71,14 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        zahlenraten.setText("03: Zahlenraten");
+        zahlenraten.setText("03: Guess the Number");
         zahlenraten.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 zahlenratenActionPerformed(evt);
             }
         });
 
-        potenz.setText("04: Potenzschleife");
+        potenz.setText("04: Exponents");
         potenz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 potenzActionPerformed(evt);
@@ -91,10 +92,17 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        tracetabellen.setText("06: TraceTabellen");
+        tracetabellen.setText("06: Arrays");
         tracetabellen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tracetabellenActionPerformed(evt);
+            }
+        });
+
+        tracetabellen1.setText("07: Sorting");
+        tracetabellen1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tracetabellen1ActionPerformed(evt);
             }
         });
 
@@ -118,20 +126,20 @@ public class GUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(hello_world, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(calculator, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(zahlenraten, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(potenz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(tictactoe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(tracetabellen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(150, Short.MAX_VALUE)
-                        .addComponent(text, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(366, Short.MAX_VALUE)
+                .addComponent(text, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(367, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(hello_world, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(calculator, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(zahlenraten, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(potenz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tictactoe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tracetabellen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tracetabellen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,45 +158,52 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(tictactoe)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tracetabellen)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tracetabellen1)
+                .addContainerGap(256, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void hello_worldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hello_worldActionPerformed
-    Hello_world hello = new Hello_world();
-    hello.setVisible(true);
+        Hello_world hello = new Hello_world();
+        hello.setVisible(true);
     }//GEN-LAST:event_hello_worldActionPerformed
 
     private void calculatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculatorActionPerformed
-    Calculator calc = new Calculator();
-    calc.setVisible(true);
+        Calculator calc = new Calculator();
+        calc.setVisible(true);
     }//GEN-LAST:event_calculatorActionPerformed
 
     private void zahlenratenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zahlenratenActionPerformed
-    Zahlenraten zahl = new Zahlenraten();
-    zahl.setVisible(true);
+        Guess_the_Number zahl = new Guess_the_Number();
+        zahl.setVisible(true);
     }//GEN-LAST:event_zahlenratenActionPerformed
 
     private void potenzActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_potenzActionPerformed
-    Potenzschleife potenz = new Potenzschleife();
-    potenz.setVisible(true);
+        Exponents potenz = new Exponents();
+        potenz.setVisible(true);
     }//GEN-LAST:event_potenzActionPerformed
 
     private void tictactoeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tictactoeActionPerformed
-    TicTacToe ttt = new TicTacToe();
-    ttt.setVisible(true);
+        TicTacToe ttt = new TicTacToe();
+        ttt.setVisible(true);
     }//GEN-LAST:event_tictactoeActionPerformed
 
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
-    dispose();
+        dispose();
     }//GEN-LAST:event_deleteActionPerformed
 
     private void tracetabellenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tracetabellenActionPerformed
-    Array trace = new Array();
-    trace.setVisible(true);
+        Array trace = new Array();
+        trace.setVisible(true);
     }//GEN-LAST:event_tracetabellenActionPerformed
+
+    private void tracetabellen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tracetabellen1ActionPerformed
+        Sorting sort = new Sorting();
+        sort.setVisible(true);
+    }//GEN-LAST:event_tracetabellen1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -239,6 +254,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel text;
     private javax.swing.JButton tictactoe;
     private javax.swing.JButton tracetabellen;
+    private javax.swing.JButton tracetabellen1;
     private javax.swing.JButton zahlenraten;
     // End of variables declaration//GEN-END:variables
 }

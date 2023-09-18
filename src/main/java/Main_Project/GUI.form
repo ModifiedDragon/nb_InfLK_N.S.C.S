@@ -70,24 +70,22 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="hello_world" alignment="0" max="32767" attributes="0"/>
-                          <Component id="calculator" alignment="0" max="32767" attributes="0"/>
-                          <Component id="zahlenraten" alignment="0" max="32767" attributes="0"/>
-                          <Component id="potenz" alignment="0" max="32767" attributes="0"/>
-                          <Component id="tictactoe" alignment="0" max="32767" attributes="0"/>
-                          <Component id="tracetabellen" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="150" max="32767" attributes="0"/>
-                      <Component id="text" min="-2" pref="99" max="-2" attributes="0"/>
-                  </Group>
+              <EmptySpace pref="366" max="32767" attributes="0"/>
+              <Component id="text" min="-2" pref="99" max="-2" attributes="0"/>
+              <EmptySpace pref="367" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="hello_world" alignment="0" max="32767" attributes="0"/>
+                  <Component id="calculator" alignment="0" max="32767" attributes="0"/>
+                  <Component id="zahlenraten" alignment="0" max="32767" attributes="0"/>
+                  <Component id="potenz" alignment="0" max="32767" attributes="0"/>
+                  <Component id="tictactoe" alignment="0" max="32767" attributes="0"/>
+                  <Component id="tracetabellen" alignment="0" max="32767" attributes="0"/>
+                  <Component id="tracetabellen1" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="150" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -108,7 +106,9 @@
               <Component id="tictactoe" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="tracetabellen" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="41" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="tracetabellen1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="256" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -137,7 +137,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="zahlenraten">
       <Properties>
-        <Property name="text" type="java.lang.String" value="03: Zahlenraten"/>
+        <Property name="text" type="java.lang.String" value="03: Guess the Number"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zahlenratenActionPerformed"/>
@@ -145,7 +145,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="potenz">
       <Properties>
-        <Property name="text" type="java.lang.String" value="04: Potenzschleife"/>
+        <Property name="text" type="java.lang.String" value="04: Exponents"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="potenzActionPerformed"/>
@@ -161,10 +161,18 @@
     </Component>
     <Component class="javax.swing.JButton" name="tracetabellen">
       <Properties>
-        <Property name="text" type="java.lang.String" value="06: TraceTabellen"/>
+        <Property name="text" type="java.lang.String" value="06: Arrays"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tracetabellenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="tracetabellen1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="07: Sorting"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tracetabellen1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

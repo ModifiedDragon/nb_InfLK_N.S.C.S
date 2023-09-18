@@ -10,12 +10,12 @@ package Main_Project;
  *
  * @author nick.schroeder
  */
-public class Zahlenraten extends javax.swing.JFrame {
+public class Guess_the_Number extends javax.swing.JFrame {
 
     /**
      * Creates new form Zahlenraten
      */
-    public Zahlenraten() {
+    public Guess_the_Number() {
         initComponents();
     }
 
@@ -168,20 +168,21 @@ public class Zahlenraten extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Zahlenraten.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Guess_the_Number.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Zahlenraten.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Guess_the_Number.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Zahlenraten.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Guess_the_Number.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Zahlenraten.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Guess_the_Number.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Zahlenraten().setVisible(true);
+                new Guess_the_Number().setVisible(true);
             }
         });
     }

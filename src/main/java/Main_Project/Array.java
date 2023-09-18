@@ -317,6 +317,14 @@ public class Array extends javax.swing.JFrame {
         int nt8 = Integer.parseInt(t8.getText());
         int nt9 = Integer.parseInt(t9.getText());
         int nt10 = Integer.parseInt(t10.getText());
+        int[] highscore = {nt1,nt2,nt3,nt4,nt5,nt6,nt7,nt8,nt9,nt10};
+        for (int i = 0; i >= 10; i++){
+            if (highscore[i] < n){
+                temp = highscore[i+1];
+                highscore[i+1] = highscore[i];
+                highscore[i] = n;
+            }
+        }
         if (nt1 <= n){
             t1.setText("" + n);
             temp = nt1;
