@@ -36,8 +36,9 @@ public class GUI extends javax.swing.JFrame {
         zahlenraten = new javax.swing.JButton();
         potenz = new javax.swing.JButton();
         tictactoe = new javax.swing.JButton();
-        tracetabellen = new javax.swing.JButton();
-        tracetabellen1 = new javax.swing.JButton();
+        arrays = new javax.swing.JButton();
+        sorting = new javax.swing.JButton();
+        recursion = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu = new javax.swing.JMenu();
         delete = new javax.swing.JRadioButtonMenuItem();
@@ -92,17 +93,24 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        tracetabellen.setText("06: Arrays");
-        tracetabellen.addActionListener(new java.awt.event.ActionListener() {
+        arrays.setText("06: Arrays");
+        arrays.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tracetabellenActionPerformed(evt);
+                arraysActionPerformed(evt);
             }
         });
 
-        tracetabellen1.setText("07: Sorting");
-        tracetabellen1.addActionListener(new java.awt.event.ActionListener() {
+        sorting.setText("07: Sorting");
+        sorting.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tracetabellen1ActionPerformed(evt);
+                sortingActionPerformed(evt);
+            }
+        });
+
+        recursion.setText("08: Recursion");
+        recursion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                recursionActionPerformed(evt);
             }
         });
 
@@ -137,8 +145,9 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(zahlenraten, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(potenz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(tictactoe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tracetabellen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tracetabellen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(arrays, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(sorting, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(recursion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -157,10 +166,12 @@ public class GUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tictactoe)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tracetabellen)
+                .addComponent(arrays)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tracetabellen1)
-                .addContainerGap(256, Short.MAX_VALUE))
+                .addComponent(sorting)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(recursion)
+                .addContainerGap(227, Short.MAX_VALUE))
         );
 
         pack();
@@ -195,15 +206,20 @@ public class GUI extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_deleteActionPerformed
 
-    private void tracetabellenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tracetabellenActionPerformed
+    private void arraysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arraysActionPerformed
         Array trace = new Array();
         trace.setVisible(true);
-    }//GEN-LAST:event_tracetabellenActionPerformed
+    }//GEN-LAST:event_arraysActionPerformed
 
-    private void tracetabellen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tracetabellen1ActionPerformed
+    private void sortingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sortingActionPerformed
         Sorting sort = new Sorting();
         sort.setVisible(true);
-    }//GEN-LAST:event_tracetabellen1ActionPerformed
+    }//GEN-LAST:event_sortingActionPerformed
+
+    private void recursionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recursionActionPerformed
+        Recursion recursion = new Recursion();
+        recursion.setVisible(true);
+    }//GEN-LAST:event_recursionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -241,6 +257,7 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton arrays;
     private javax.swing.JButton calculator;
     private javax.swing.JRadioButtonMenuItem delete;
     private javax.swing.JButton hello_world;
@@ -251,10 +268,10 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
     private javax.swing.JMenu menu;
     private javax.swing.JButton potenz;
+    private javax.swing.JButton recursion;
+    private javax.swing.JButton sorting;
     private javax.swing.JLabel text;
     private javax.swing.JButton tictactoe;
-    private javax.swing.JButton tracetabellen;
-    private javax.swing.JButton tracetabellen1;
     private javax.swing.JButton zahlenraten;
     // End of variables declaration//GEN-END:variables
 }

@@ -52,6 +52,9 @@ public class Array extends javax.swing.JFrame {
         t8 = new javax.swing.JLabel();
         t9 = new javax.swing.JLabel();
         t10 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        menu = new javax.swing.JMenu();
+        delete = new javax.swing.JRadioButtonMenuItem();
 
         jTextField1.setText("jTextField1");
 
@@ -133,6 +136,26 @@ public class Array extends javax.swing.JFrame {
         t9.setText("              ");
 
         t10.setText("              ");
+
+        menu.setText("Menu");
+        menu.setActionCommand("menu");
+        menu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuActionPerformed(evt);
+            }
+        });
+
+        delete.setText("Exit");
+        delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteActionPerformed(evt);
+            }
+        });
+        menu.add(delete);
+
+        jMenuBar1.add(menu);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -448,6 +471,14 @@ public class Array extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_htKeyTyped
 
+    private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
+        dispose();
+    }//GEN-LAST:event_deleteActionPerformed
+
+    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
+
+    }//GEN-LAST:event_menuActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -485,6 +516,7 @@ public class Array extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton add;
+    private javax.swing.JRadioButtonMenuItem delete;
     private javax.swing.JLabel h1;
     private javax.swing.JLabel h2;
     private javax.swing.JLabel h3;
@@ -493,7 +525,9 @@ public class Array extends javax.swing.JFrame {
     private javax.swing.JLabel h6;
     private javax.swing.JButton hb;
     private javax.swing.JTextField ht;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JMenu menu;
     private javax.swing.JTextField number;
     private javax.swing.JTextField position;
     private javax.swing.JButton start;

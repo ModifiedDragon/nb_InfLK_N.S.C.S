@@ -82,8 +82,9 @@
                   <Component id="zahlenraten" alignment="0" max="32767" attributes="0"/>
                   <Component id="potenz" alignment="0" max="32767" attributes="0"/>
                   <Component id="tictactoe" alignment="0" max="32767" attributes="0"/>
-                  <Component id="tracetabellen" alignment="0" max="32767" attributes="0"/>
-                  <Component id="tracetabellen1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="arrays" alignment="0" max="32767" attributes="0"/>
+                  <Component id="sorting" alignment="0" max="32767" attributes="0"/>
+                  <Component id="recursion" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -105,10 +106,12 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="tictactoe" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="tracetabellen" min="-2" max="-2" attributes="0"/>
+              <Component id="arrays" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="tracetabellen1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="256" max="32767" attributes="0"/>
+              <Component id="sorting" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="recursion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="227" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -159,20 +162,28 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tictactoeActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="tracetabellen">
+    <Component class="javax.swing.JButton" name="arrays">
       <Properties>
         <Property name="text" type="java.lang.String" value="06: Arrays"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tracetabellenActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="arraysActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="tracetabellen1">
+    <Component class="javax.swing.JButton" name="sorting">
       <Properties>
         <Property name="text" type="java.lang.String" value="07: Sorting"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tracetabellen1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sortingActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="recursion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="08: Recursion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="recursionActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
