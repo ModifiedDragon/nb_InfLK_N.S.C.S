@@ -39,6 +39,7 @@ public class GUI extends javax.swing.JFrame {
         arrays = new javax.swing.JButton();
         sorting = new javax.swing.JButton();
         recursion = new javax.swing.JButton();
+        class2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu = new javax.swing.JMenu();
         delete = new javax.swing.JRadioButtonMenuItem();
@@ -114,6 +115,13 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        class2.setText("09: class_books");
+        class2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                class2ActionPerformed(evt);
+            }
+        });
+
         menu.setText("Menu");
         menu.setActionCommand("menu");
 
@@ -147,7 +155,8 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(tictactoe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(arrays, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(sorting, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(recursion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(recursion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(class2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -171,7 +180,9 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(sorting)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(recursion)
-                .addContainerGap(227, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(class2)
+                .addContainerGap(197, Short.MAX_VALUE))
         );
 
         pack();
@@ -221,6 +232,11 @@ public class GUI extends javax.swing.JFrame {
         recursion.setVisible(true);
     }//GEN-LAST:event_recursionActionPerformed
 
+    private void class2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_class2ActionPerformed
+        Classes_from_Book clas2 = new Classes_from_Book();
+        clas2.setVisible(true);
+    }//GEN-LAST:event_class2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -259,6 +275,7 @@ public class GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton arrays;
     private javax.swing.JButton calculator;
+    private javax.swing.JButton class2;
     private javax.swing.JRadioButtonMenuItem delete;
     private javax.swing.JButton hello_world;
     private javax.swing.JButton jButton1;
