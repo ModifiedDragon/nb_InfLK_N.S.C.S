@@ -233,8 +233,8 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_recursionActionPerformed
 
     private void class2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_class2ActionPerformed
-        Classes_from_Book clas2 = new Classes_from_Book();
-        clas2.setVisible(true);
+        Queue_and_stacks queue = new Queue_and_stacks();
+        queue.setVisible(true);
     }//GEN-LAST:event_class2ActionPerformed
 
     /**
