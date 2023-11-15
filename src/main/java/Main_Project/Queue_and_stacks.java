@@ -17,21 +17,21 @@ public class Queue_and_stacks extends javax.swing.JFrame {
         initComponents();
     }
 
-    public class queue {
-        private void initialize(){
-            
+    public class stack {
+        
+        Dat
+    }
+    public class Element{
+    
+        int N;
+        Element nextitem;
+        
+        Element(int N){
+            this.N = N;
         }
-        public void enqueue() {
-            
-        }
-        public void dequeue(){
-            
-        }
-        public void head(){
-            
-        }
-        public void isEmpty(){
-            
+        Element(int N, Element nextitem ){
+            this.N = N;
+            this.nextitem = nextitem;
         }
     }
     /**
