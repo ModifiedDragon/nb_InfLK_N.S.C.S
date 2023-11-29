@@ -39,7 +39,8 @@ public class GUI extends javax.swing.JFrame {
         arrays = new javax.swing.JButton();
         sorting = new javax.swing.JButton();
         recursion = new javax.swing.JButton();
-        class2 = new javax.swing.JButton();
+        qas = new javax.swing.JButton();
+        tree = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu = new javax.swing.JMenu();
         delete = new javax.swing.JRadioButtonMenuItem();
@@ -115,10 +116,17 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        class2.setText("09: class_books");
-        class2.addActionListener(new java.awt.event.ActionListener() {
+        qas.setText("09: Queue and stacks");
+        qas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                class2ActionPerformed(evt);
+                qasActionPerformed(evt);
+            }
+        });
+
+        tree.setText("10: Trees");
+        tree.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                treeActionPerformed(evt);
             }
         });
 
@@ -156,7 +164,8 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(arrays, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(sorting, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(recursion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(class2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(qas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tree, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -181,8 +190,10 @@ public class GUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(recursion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(class2)
-                .addContainerGap(197, Short.MAX_VALUE))
+                .addComponent(qas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tree)
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         pack();
@@ -232,10 +243,15 @@ public class GUI extends javax.swing.JFrame {
         recursion.setVisible(true);
     }//GEN-LAST:event_recursionActionPerformed
 
-    private void class2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_class2ActionPerformed
+    private void qasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qasActionPerformed
         Queue_and_stacks queue = new Queue_and_stacks();
         queue.setVisible(true);
-    }//GEN-LAST:event_class2ActionPerformed
+    }//GEN-LAST:event_qasActionPerformed
+
+    private void treeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_treeActionPerformed
+        Tree tree = new Tree();
+        tree.setVisible(true);
+    }//GEN-LAST:event_treeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -275,7 +291,6 @@ public class GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton arrays;
     private javax.swing.JButton calculator;
-    private javax.swing.JButton class2;
     private javax.swing.JRadioButtonMenuItem delete;
     private javax.swing.JButton hello_world;
     private javax.swing.JButton jButton1;
@@ -285,10 +300,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
     private javax.swing.JMenu menu;
     private javax.swing.JButton potenz;
+    private javax.swing.JButton qas;
     private javax.swing.JButton recursion;
     private javax.swing.JButton sorting;
     private javax.swing.JLabel text;
     private javax.swing.JButton tictactoe;
+    private javax.swing.JButton tree;
     private javax.swing.JButton zahlenraten;
     // End of variables declaration//GEN-END:variables
 }
