@@ -42,91 +42,103 @@ public class Tree extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public class Knoten{
+    public class Knoten {
+
         Knoten Linkerteilbaum;
         Knoten rechterteilbaum;
         int value;
-        
-        Knoten(int vlaue){
+
+        Knoten(int vlaue) {
             this.value = value;
         }
-        public void add(Knoten item){
-            if(item.value > this.value){
-                
+
+        public void add(Knoten item) {
+            if (item.value > this.value) {
+            item.Linkerteilbaum = item.value;
+            } else {
+            
             }
         }
     }
-    
-    public class tree{
-        
+
+    public class tree {
+
         private int number, zeiger;
         Knoten wurzel;
-        
+
         tree() {
             wurzel = null;
         }
-        
-        public void add(int value){
-            
+    
+
+        public void add(int value) {
+
             Knoten newItem = new Knoten(value);
+            
             //Version 1
             if (wurzel == null){
                 this.wurzel = newItem;
             } else {
                 wurzel.add(newItem);
             }
+             /*
             //Version 2
-            /*
-            if (wurzel == null){
+            if (wurzel == null) {
                 this.wurzel = newItem;
             }
-            if(knoten.value > newItem.value){
-                if(knoten.Linkerteilbaum == null){
+            if (knoten.value > newItem.value) {
+                if (knoten.Linkerteilbaum == null) {
                     knoten.Linkerteilbaum = newItem;
                 } else {
                     this.add(newItem.value, knoten.Linkerteilbaum);
                 }
-            */
-            }
-            
-    }
-    }
-    
-   
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
+            } else if  {
+                if (knoten.value < newItem.value) {
+                    if (knoten.rechterteilbaum == null) {
+                        knoten.rechterteilbaum = newItem;
+                    } else {
+                        this.add(newItem.value, knoten.rechterteilbaum);
+
+                    }
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            */
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Tree().setVisible(true);
-            }
-        });
     }
+                /**
+                 * @param args the command line arguments
+                 */
+        public static void main(String args[]) {
+            /* Set the Nimbus look and feel */
+            //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+            /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+             */
+            try {
+                for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                    if ("Nimbus".equals(info.getName())) {
+                        javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                        break;
+                    }
+                }
+            } catch (ClassNotFoundException ex) {
+                java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            } catch (InstantiationException ex) {
+                java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            } catch (IllegalAccessException ex) {
+                java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+                java.util.logging.Logger.getLogger(Tree.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
+            //</editor-fold>
+
+            /* Create and display the form */
+            java.awt.EventQueue.invokeLater(new Runnable() {
+                public void run() {
+                    new Tree().setVisible(true);
+                }
+            });
+        }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
